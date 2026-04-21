@@ -1,26 +1,233 @@
 @import "tailwindcss";
 
+/* ============================================================
+   METRICLINE GROUP — TAILWIND v4 THEME TOKENS
+   "Precision Paper" Light Theme — Phase 1 & 2
+   ============================================================ */
+
+@theme {
+  /* ── Fonts ─────────────────────────────────────────────── */
+  --font-sans: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
+  --font-display: var(--font-syne), 'Syne', system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+
+  /* ── Group / neutral base — LIGHT THEME ─────────────── */
+  --color-group-bg:              #F7F4EF;
+  --color-group-surface:         #EFEBE4;
+  --color-group-card:            #FFFFFF;
+  --color-group-border:          #DDD7CE;
+  --color-group-border-light:    #E8E2D9;
+  --color-group-muted:           #8A7E72;
+  --color-group-text:            #1A1510;
+  --color-group-text-muted:      #6B6257;
+  --color-group-textMuted:       #6B6257;  /* camelCase alias */
+  --color-group-text-dim:        #9A8870;
+  --color-group-textDim:         #9A8870;  /* camelCase alias */
+
+  /* ── Dark anchors — StatsBar, CtaBanner, Footer ─────── */
+  --color-anchor-bg:             #1C1510;
+  --color-anchor-surface:        #231D16;
+  --color-anchor-border:         #3B3026;
+  --color-anchor-text:           #F5F0E8;
+  --color-anchor-text-muted:     #9A8870;
+  --color-anchor-textMuted:      #9A8870;  /* camelCase alias */
+
+  /* ── Projects division ───────────────────────────────── */
+  --color-projects-bg:           #F4F7FA;
+  --color-projects-surface:      #EBF0F5;
+  --color-projects-card:         #FFFFFF;
+  --color-projects-border:       #D4DDE8;
+  --color-projects-hero-bg:      #0D1825;
+  --color-projects-heroBg:       #0D1825;  /* camelCase alias */
+  --color-projects-hero-surface: #0E1F35;
+  --color-projects-accent:       #C8832A;
+  --color-projects-accent-hover: #D99440;
+  --color-projects-accentHover:  #D99440;  /* camelCase alias */
+  --color-projects-text:         #1A1510;
+  --color-projects-text-muted:   #5A6E82;
+  --color-projects-textMuted:    #5A6E82;  /* camelCase alias */
+  --color-projects-hero-text:    #FFFFFF;
+  --color-projects-heroText:     #FFFFFF;  /* camelCase alias */
+  --color-projects-hero-text-muted: rgba(255, 255, 255, 0.55);
+  --color-projects-heroTextMuted: rgba(255, 255, 255, 0.55); /* camelCase alias */
+
+  /* ── Rentals division ────────────────────────────────── */
+  --color-rentals-bg:            #FAFAF5;
+  --color-rentals-surface:       #F3F1E8;
+  --color-rentals-card:          #FFFFFF;
+  --color-rentals-border:        #E5E0D2;
+  --color-rentals-hero-bg:       #0F0F0F;
+  --color-rentals-heroBg:        #0F0F0F;  /* camelCase alias */
+  --color-rentals-hero-surface:  #141414;
+  --color-rentals-accent:        #F0A820;
+  --color-rentals-accent-hover:  #F7B831;
+  --color-rentals-accentHover:   #F7B831;  /* camelCase alias */
+  --color-rentals-text:          #1A1510;
+  --color-rentals-text-muted:    #6B6257;
+  --color-rentals-textMuted:     #6B6257;  /* camelCase alias */
+  --color-rentals-hero-text:     #FFFFFF;
+  --color-rentals-heroText:      #FFFFFF;  /* camelCase alias */
+  --color-rentals-hero-text-muted: rgba(255, 255, 255, 0.50);
+  --color-rentals-heroTextMuted: rgba(255, 255, 255, 0.50); /* camelCase alias */
+
+  /* ── Operations division ─────────────────────────────── */
+  --color-operations-bg:         #F2FAF6;
+  --color-operations-surface:    #E8F5EE;
+  --color-operations-card:       #FFFFFF;
+  --color-operations-border:     #C8E8D4;
+  --color-operations-hero-bg:    #091712;
+  --color-operations-heroBg:     #091712;  /* camelCase alias */
+  --color-operations-hero-surface: #0C1E16;
+  --color-operations-accent:     #1FC87A;
+  --color-operations-accent-hover: #35D48A;
+  --color-operations-accentHover: #35D48A; /* camelCase alias */
+  --color-operations-text:       #1A1510;
+  --color-operations-text-muted: #2D6B4E;
+  --color-operations-textMuted:  #2D6B4E;  /* camelCase alias */
+  --color-operations-hero-text:  #FFFFFF;
+  --color-operations-heroText:   #FFFFFF;  /* camelCase alias */
+  --color-operations-hero-text-muted: rgba(255, 255, 255, 0.50);
+  --color-operations-heroTextMuted: rgba(255, 255, 255, 0.50); /* camelCase alias */
+
+  /* ── Type Scale ─────────────────────────────────────────── */
+  --text-display-xl:               64px;
+  --text-display-xl--line-height:  1.0;
+
+  --text-display-lg:               52px;
+  --text-display-lg--line-height:  1.05;
+
+  --text-display-md:               44px;
+  --text-display-md--line-height:  1.1;
+
+  --text-heading-lg:               32px;
+  --text-heading-lg--line-height:  1.2;
+
+  --text-heading-md:               24px;
+  --text-heading-md--line-height:  1.3;
+
+  --text-heading-sm:               18px;
+  --text-heading-sm--line-height:  1.4;
+
+  --text-body-lg:                  16px;
+  --text-body-lg--line-height:     1.7;
+
+  --text-body-md:                  15px;
+  --text-body-md--line-height:     1.6;
+
+  --text-body-sm:                  14px;
+  --text-body-sm--line-height:     1.5;
+
+  --text-label:                    12px;
+  --text-label--line-height:       1;
+  --text-label--letter-spacing:    0.15em;
+}
+
+/* ── Shadow system ───────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --shadow-card: 0 1px 4px rgba(26, 21, 16, 0.06), 0 4px 16px rgba(26, 21, 16, 0.05);
+  --shadow-card-hover: 0 4px 12px rgba(26, 21, 16, 0.10), 0 8px 32px rgba(26, 21, 16, 0.07);
+  --shadow-nav: 0 1px 0 rgba(26, 21, 16, 0.08), 0 4px 24px rgba(26, 21, 16, 0.06);
+  --shadow-button-primary: 0 2px 8px rgba(200, 131, 42, 0.30);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Base ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background-color: #F7F4EF;
+  color: #1A1510;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F7F4EF;
+  color: #1A1510;
+  font-family: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Marquee ─────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration, 40s) linear infinite;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EFEBE4;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4B8A8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A89A8A;
+}
+
+/* ── Blueprint grid texture — CSS-only, used in hero ──────── */
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(100, 84, 65, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 84, 65, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.07;
+}
+
+/* ── Credential badge ─────────────────────────────────────── */
+.credential-badge {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6B6257;
+  border: 1px solid #DDD7CE;
+  padding: 5px 10px;
+  background: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ── Typography — Phase 2C ───────────────────────────────── */
+
+/* Hero H1 — Syne, ALL CAPS, heavy weight */
+.text-display-xl,
+.text-display-lg {
+  font-family: var(--font-syne), 'Syne', system-ui, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+/* Section headings H2 — Syne, mixed case */
+h2,
+.heading-section {
+  font-family: var(--font-syne), 'Syne', system-ui, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: -0.02em;
+}
+
+/* Card headings H3 — Syne, mixed case */
+h3 {
+  font-family: var(--font-syne), 'Syne', system-ui, sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: -0.01em;
+}
+
+/* Body — DM Sans */
+body, p, .text-body-lg, .text-body-md, .text-body-sm {
+  font-family: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
 }
