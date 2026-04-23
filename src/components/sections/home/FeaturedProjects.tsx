@@ -132,8 +132,8 @@ export default function FeaturedProjects({ caseStudies }: FeaturedProjectsProps)
   const placeholderCount = Math.max(0, 4 - caseStudies.length);
 
   return (
-    <section className="bg-white py-24 md:py-32" aria-label="Featured projects">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-24 md:py-32 2xl:py-40" aria-label="Featured projects">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         {/* Header */}
         <div className="mb-14">
           <SectionLabel className="mb-4">Featured Work</SectionLabel>

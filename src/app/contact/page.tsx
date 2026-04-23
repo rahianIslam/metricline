@@ -21,7 +21,7 @@ export default function ContactPage() {
 
       {/* ── Two-column body ──────────────────────────────── */}
       <section className="bg-group-bg py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-16 xl:gap-24 items-start">
 
             {/* ── Left: Form ─────────────────────────────── */}

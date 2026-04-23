@@ -94,7 +94,7 @@ export default function OperationsHero() {
         <FieldGrid />
 
         <div className="relative flex-1 flex flex-col">
-          <div className="max-w-7xl mx-auto w-full px-6 flex-1 flex items-center">
+          <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto w-full px-6 2xl:px-20 flex-1 flex items-center">
             <div className="w-full grid grid-cols-1 lg:grid-cols-[55%_45%] min-h-[calc(100vh-44px)]">
 
               {/* ── Left — Content ─────────────────────────── */}
@@ -115,7 +115,7 @@ export default function OperationsHero() {
                 <motion.h1
                   variants={fadeUp}
                   className="font-extrabold leading-[1.0] tracking-[-0.03em] text-white mb-8"
-                  style={{ fontSize: "clamp(40px, 5.5vw, 68px)" }}
+                  style={{ fontSize: "clamp(40px, 5.5vw, 96px)" }}
                 >
                   {/* TODO_CONTENT: Operations hero headline */}
                   <span className="block">Facilities running.</span>

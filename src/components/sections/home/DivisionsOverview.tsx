@@ -76,8 +76,8 @@ export default function DivisionsOverview() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="bg-white py-24 md:py-32" aria-label="Our divisions">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-24 md:py-32 2xl:py-40" aria-label="Our divisions">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         {/* Header */}
         <div className="mb-14">
           <SectionLabel className="mb-4">Our Divisions</SectionLabel>

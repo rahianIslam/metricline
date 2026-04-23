@@ -44,7 +44,7 @@ export default function AboutHero() {
       {/* ── Bottom fade ────────────────────────────────────── */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-group-bg to-transparent pointer-events-none" aria-hidden="true" />
 
-      <div className="relative max-w-7xl mx-auto px-6 w-full">
+      <div className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20 w-full">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -63,7 +63,7 @@ export default function AboutHero() {
           <motion.h1
             variants={fadeUp}
             className="font-extrabold text-group-text mb-8 leading-[1.0] tracking-[-0.03em]"
-            style={{ fontSize: "clamp(38px, 5.5vw, 64px)" }}
+            style={{ fontSize: "clamp(38px, 5.5vw, 92px)" }}
           >
             Built to close the gap
             <br />
@@ -74,7 +74,7 @@ export default function AboutHero() {
           {/* Mission first sentence as subtext */}
           <motion.p
             variants={fadeUp}
-            className="text-body-lg text-group-textMuted leading-[1.7] max-w-[540px]"
+            className="text-body-lg text-group-textMuted leading-[1.7] max-w-[540px] 2xl:max-w-[620px]"
           >
             {MISSION}
           </motion.p>

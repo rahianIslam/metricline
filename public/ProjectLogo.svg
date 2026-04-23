@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 142" width="320" height="142" overflow="visible">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-350px);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      #bar1 { animation: slideIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0s both; }
+      #bar2 { animation: slideIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both; }
+      #bar3 { animation: slideIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.24s both; }
+      #label { animation: slideIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.36s both; }
+    ]]></style>
+  </defs>
+
+  <!-- Bars shifted so visual center (left=60, right=230) lands at x=145 (canvas midpoint) -->
+  <rect id="bar1" x="75"  y="15" width="120" height="22" fill="#FFB800" rx="1"/>
+  <rect id="bar2" x="125" y="41" width="120" height="22" fill="#E07A10" rx="1"/>
+  <rect id="bar3" x="95"  y="67" width="120" height="22" fill="#C04B08" rx="1"/>
+
+  <text
+    id="label"
+    x="160"
+    y="127"
+    text-anchor="middle"
+    font-family="Poppins, sans-serif"
+    font-weight="500"
+    font-size="35"
+    fill="#111111"
+  >Metricline Projects</text>
+</svg>

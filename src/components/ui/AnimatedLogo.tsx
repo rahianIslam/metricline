@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 
 // Recreates the Metricline Projects logo mark with entrance animation.
 //
-// Bar colours and stagger positions match the ProjectLogo.png exactly:
-//   top  — amber-gold  #FAB500  (shortest, leftmost)
-//   mid  — orange      #E07228  (slightly wider, offset right)
-//   btm  — dark rust   #8B3A12  (similar width, offset right again)
+// Bar colours and stagger positions match ProjectLogo.svg exactly:
+//   bar1 — amber-gold  #FFB800  (leftmost, x=75 in SVG)
+//   bar2 — orange      #E07A10  (furthest right, x=125 in SVG)
+//   bar3 — dark rust   #C04B08  (middle offset, x=95 in SVG)
+//
+// All bars same width (120 units in SVG); offsets relative to bar1:
+//   bar1: +0, bar2: +50, bar3: +20
 //
 // Animation sequence:
 //   1. Three bars slide in from the left, 120 ms stagger
@@ -21,20 +24,15 @@ interface AnimatedLogoProps {
   theme?: "light" | "dark";
 }
 
-// Values produce a visual match to the PNG at hero scale.
-// Bar height and gap kept proportional to the original mark.
-// Horizontal extents (marginLeft + width):
-//   top    0 → 110   (leftmost, shortest)
-//   bottom 12 → 122  (starts/ends slightly after top, stops before middle)
-//   middle 22 → 152  (furthest right, longest)
+// At hero scale bar width is 120 px. Offsets scaled from SVG ratios.
 const BARS = [
-  { color: "#FAB500", width: 110, marginLeft: 0  }, // amber-gold — top
-  { color: "#E07228", width: 130, marginLeft: 22 }, // orange     — middle (longest, furthest right)
-  { color: "#8B3A12", width: 110, marginLeft: 12 }, // dark rust  — bottom (between top and middle)
+  { color: "#FFB800", width: 120, marginLeft: 0  }, // amber-gold — top
+  { color: "#E07A10", width: 120, marginLeft: 50 }, // orange     — furthest right
+  { color: "#C04B08", width: 120, marginLeft: 20 }, // dark rust  — mid offset
 ] as const;
 
-const BAR_HEIGHT = 17;
-const BAR_GAP    = 8;
+const BAR_HEIGHT = 22; // matches SVG height="22"
+const BAR_GAP    = 4;  // matches SVG y-gap (41-15-22=4, 67-41-22=4)
 const RADIUS     = 2;
 
 export default function AnimatedLogo({
@@ -136,7 +134,7 @@ export default function AnimatedLogo({
             ease:     [0.22, 1, 0.36, 1],
           }}
         >
-          Engineering · Procurement · Construction · Execution
+          Engineering · Procurement · Construction · Management
         </motion.p>
       )}
     </div>

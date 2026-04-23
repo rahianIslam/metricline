@@ -29,7 +29,7 @@ function StripeTexture() {
 
 export default function CareersHero() {
   return (
-    <section className="relative bg-group-bg border-b border-group-border overflow-hidden py-28 md:py-36">
+    <section className="relative bg-group-bg border-b border-group-border overflow-hidden py-28 md:py-36 2xl:py-44">
       <StripeTexture />
 
       {/* Ghost "CAREERS" watermark — vertical, right side */}
@@ -46,7 +46,7 @@ export default function CareersHero() {
         </span>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -63,7 +63,7 @@ export default function CareersHero() {
           <motion.h1
             variants={fadeUp}
             className="font-extrabold text-group-text tracking-tight leading-[1.0] mb-7"
-            style={{ fontSize: "clamp(44px, 6.5vw, 88px)", letterSpacing: "-0.03em" }}
+            style={{ fontSize: "clamp(44px, 6.5vw, 112px)", letterSpacing: "-0.03em" }}
           >
             Build something{" "}
             <span

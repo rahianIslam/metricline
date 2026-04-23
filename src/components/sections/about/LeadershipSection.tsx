@@ -18,7 +18,7 @@ export default function LeadershipSection({ members }: LeadershipSectionProps) {
       className="bg-group-surface border-t border-group-border py-24 md:py-32"
       aria-label="Leadership"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         {/* Header */}
         <div className="mb-14">
           <SectionLabel className="mb-4">Leadership</SectionLabel>

@@ -16,8 +16,8 @@ export default function CompanyStory() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="bg-white py-24 md:py-36 overflow-hidden" aria-label="Company story">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-24 md:py-36 2xl:py-44 overflow-hidden" aria-label="Company story">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         {/* Two-column grid: 30% label rail / 70% content */}
         <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-12 lg:gap-0">
 

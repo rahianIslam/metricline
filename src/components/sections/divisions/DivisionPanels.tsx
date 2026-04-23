@@ -236,7 +236,7 @@ function DivisionsHeader() {
       </svg>
 
       <motion.div
-        className="relative max-w-7xl mx-auto px-6 pt-36 pb-20 md:pt-44 md:pb-28"
+        className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20 pt-36 pb-20 md:pt-44 md:pb-28"
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}

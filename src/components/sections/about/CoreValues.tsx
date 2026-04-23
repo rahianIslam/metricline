@@ -19,8 +19,8 @@ export default function CoreValues() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="bg-group-surface border-t border-group-border py-24 md:py-32" aria-label="Our values">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-group-surface border-t border-group-border py-24 md:py-32 2xl:py-40" aria-label="Our values">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
 
         {/* Header */}
         <div className="mb-14 flex flex-col md:flex-row md:items-end justify-between gap-6">

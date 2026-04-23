@@ -42,7 +42,7 @@ export default function HseSection() {
         aria-hidden="true"
       />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         <motion.div
           ref={ref}
           variants={staggerContainer}

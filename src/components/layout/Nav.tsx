@@ -19,7 +19,7 @@ function DivisionsDropdown({ onClose }: { onClose: () => void }) {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[640px] rounded-lg border border-[#DDD7CE] bg-white backdrop-blur-md shadow-[var(--shadow-nav)] overflow-hidden"
+      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[640px] 2xl:w-[720px] rounded-lg border border-[#DDD7CE] bg-white backdrop-blur-md shadow-[var(--shadow-nav)] overflow-hidden"
     >
       <div className="p-2 grid grid-cols-3 gap-1">
         {DIVISIONS.map((div) => (
@@ -219,7 +219,7 @@ export default function Nav() {
           .filter(Boolean)
           .join(" ")}
       >
-        <div className="max-w-[1360px] mx-auto px-8 flex items-center h-16 gap-6">
+        <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto w-full px-8 2xl:px-20 flex items-center h-16 2xl:h-20 gap-6">
           {/* Logo (left) */}
           <Link href="/" aria-label="Metricline Group home" className="hidden md:flex flex-shrink-0">
             <NavLogo theme="light" />

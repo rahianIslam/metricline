@@ -11,10 +11,10 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 
 function HeroImageStack() {
   return (
-    <div className="relative w-full h-full flex items-center">
+    <div className="relative w-full h-full min-h-[480px] 2xl:min-h-[680px] flex items-center">
       {/* Image 1 — large, primary */}
       <motion.div
-        className="absolute left-0 top-[10%] w-[72%] shadow-xl"
+        className="absolute left-0 top-[10%] w-[72%] 2xl:w-[75%] shadow-xl"
         initial={{ opacity: 0, scale: 1.04 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
@@ -31,7 +31,7 @@ function HeroImageStack() {
 
       {/* Image 2 — small, offset */}
       <motion.div
-        className="absolute right-0 bottom-[12%] w-[52%] shadow-lg"
+        className="absolute right-0 bottom-[12%] w-[52%] 2xl:w-[55%] shadow-lg"
         initial={{ opacity: 0, scale: 1.04 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
@@ -70,8 +70,8 @@ export default function Hero() {
 
       {/* Main content grid */}
       <div className="relative flex-1 flex flex-col">
-        <div className="max-w-7xl mx-auto w-full px-6 flex-1 flex items-center">
-          <div className="w-full grid grid-cols-1 lg:grid-cols-[55%_45%] min-h-screen">
+        <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto w-full px-6 2xl:px-20 flex-1 flex items-center">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-[55%_45%] 2xl:grid-cols-[50%_50%] min-h-screen">
 
             {/* ── Left — Content ─────────────────────────────── */}
             <motion.div
@@ -88,7 +88,7 @@ export default function Hero() {
               {/* Subheading */}
               <motion.p
                 variants={fadeUp}
-                className="text-body-lg text-group-textMuted max-w-[440px] leading-[1.7] mb-10"
+                className="text-body-lg text-group-textMuted max-w-[440px] 2xl:max-w-[600px] leading-[1.7] mb-10"
               >
                 {HOME_HERO.subheading}
               </motion.p>

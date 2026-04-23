@@ -42,7 +42,7 @@ export const COMPANY = {
 
 export const HOME_HERO = {
   eyebrow: "METRICLINE GROUP OF INDUSTRIES",
-  headline: "Engineering, Procurement, Construction, and Execution — Delivered End-to-End",
+  headline: "Engineering, Procurement, Construction, and Management — Delivered End-to-End",
   subheading:
     "Metricline Group delivers integrated engineering and construction services across industrial sectors. We take projects from early concept through execution and start-up with a focus on practical, fit-for-purpose solutions.",
   ctaPrimary: { label: "Explore Our Divisions", href: "/divisions" },

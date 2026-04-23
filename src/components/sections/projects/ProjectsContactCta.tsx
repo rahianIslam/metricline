@@ -44,7 +44,7 @@ export default function ProjectsContactCta() {
         variants={staggerContainer}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
-        className="relative max-w-7xl mx-auto px-10 md:px-16"
+        className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-10 md:px-16"
       >
         <div className="max-w-3xl">
           {/* Eyebrow */}

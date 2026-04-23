@@ -52,7 +52,7 @@ export default function ContactHero() {
         aria-hidden="true"
       />
 
-      <div className="relative max-w-7xl mx-auto px-6 w-full">
+      <div className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20 w-full">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -71,7 +71,7 @@ export default function ContactHero() {
           <motion.h1
             variants={fadeUp}
             className="font-extrabold text-group-text mb-7 leading-[1.03] tracking-[-0.03em]"
-            style={{ fontSize: "clamp(36px, 5vw, 62px)" }}
+            style={{ fontSize: "clamp(36px, 5vw, 88px)" }}
           >
             Tell us about{" "}
             <span className="text-group-textMuted">your project.</span>

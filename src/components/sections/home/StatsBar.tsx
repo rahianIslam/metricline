@@ -18,7 +18,7 @@ export default function StatsBar() {
       className="bg-anchor-bg border-t border-b border-anchor-border"
       aria-label="Company statistics"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {HOME_STATS.map((stat, i) => (
             <StatCard

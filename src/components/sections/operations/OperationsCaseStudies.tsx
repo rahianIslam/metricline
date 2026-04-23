@@ -20,7 +20,7 @@ export default function OperationsCaseStudies() {
       style={{ backgroundColor: division.surface, borderColor: division.border }}
       aria-label="Case studies"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
 
         <motion.div
           ref={ref}

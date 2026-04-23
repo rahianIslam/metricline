@@ -180,7 +180,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
       style={{ backgroundColor: division.surface }}
       aria-label="Case studies"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         {/* Header */}
         <div className="mb-14 max-w-xl">
           <SectionLabel color="projects" className="mb-4">

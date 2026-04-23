@@ -49,7 +49,7 @@ export default function PortfolioHeader() {
         aria-hidden="true"
       />
 
-      <div className="relative max-w-7xl mx-auto px-6 pb-20">
+      <div className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20 pb-20">
         <div className="flex items-end gap-12">
 
           {/* Left — main content */}
@@ -66,7 +66,7 @@ export default function PortfolioHeader() {
             <motion.h1
               variants={fadeUp}
               className="font-extrabold text-group-text tracking-tight leading-[1.0] mb-7"
-              style={{ fontSize: "clamp(40px, 5.5vw, 68px)" }}
+              style={{ fontSize: "clamp(40px, 5.5vw, 96px)" }}
             >
               Our work,
               <br />

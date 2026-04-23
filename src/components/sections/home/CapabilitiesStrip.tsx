@@ -32,8 +32,8 @@ export default function CapabilitiesStrip() {
   const { ref, inView } = useInView({ margin: "-80px" });
 
   return (
-    <section className="bg-white py-16 border-b border-group-border">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-16 2xl:py-24 border-b border-group-border">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-10 lg:gap-16">
 
           {/* Left label column */}

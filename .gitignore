@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code internals
+.claude/
+
+# local assets not for git
+photos/
+ProjectLogo.png
+DESIGN_IMPLEMENTATION_LOG.md
+DESIGN_REFRESH_INSTRUCTIONS.md
+DESIGN_REFRESH_V2.md
+PROJECT_STATUS.md
+SCROLL_ANIMATION_PLAN.md

@@ -49,8 +49,8 @@ export default function ClientLogos() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="bg-group-surface border-t border-b border-group-border py-16" aria-label="Trusted by">
-      <div className="max-w-7xl mx-auto px-6 mb-10">
+    <section className="bg-group-surface border-t border-b border-group-border py-16 2xl:py-24" aria-label="Trusted by">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20 mb-10">
         <motion.div
           ref={ref}
           variants={fadeUp}

@@ -82,7 +82,7 @@ export default function ProjectsHero() {
       <BlueprintGrid />
 
       <div className="relative flex-1 flex flex-col">
-        <div className="max-w-7xl mx-auto w-full px-6 flex-1 flex items-center">
+        <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto w-full px-6 2xl:px-20 flex-1 flex items-center">
           <div className="w-full grid grid-cols-1 lg:grid-cols-[55%_45%] min-h-[calc(100vh-64px)]">
 
             {/* ── Left — Content ───────────────────────────── */}
@@ -105,7 +105,7 @@ export default function ProjectsHero() {
               <motion.h1
                 variants={fadeUp}
                 className="font-extrabold leading-[1.0] tracking-[-0.03em] mb-8"
-                style={{ color: "#1A1510", fontSize: "clamp(40px, 5.5vw, 68px)" }}
+                style={{ color: "#1A1510", fontSize: "clamp(40px, 5.5vw, 96px)" }}
               >
                 <span className="block">From concept to</span>
                 <span className="block">commissioning.</span>
@@ -125,7 +125,7 @@ export default function ProjectsHero() {
               {/* Subheading */}
               <motion.p
                 variants={fadeUp}
-                className="text-body-lg max-w-[440px] leading-[1.7] mb-6"
+                className="text-body-lg max-w-[440px] 2xl:max-w-[520px] leading-[1.7] mb-6"
                 style={{ color: "#5A6E82" }}
               >
                 Full-discipline EPCM for the energy transition, oil &amp; gas,

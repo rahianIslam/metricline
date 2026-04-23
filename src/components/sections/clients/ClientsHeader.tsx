@@ -6,7 +6,7 @@ import { INDUSTRIES } from "@/lib/content";
 
 export default function ClientsHeader() {
   return (
-    <section className="relative overflow-hidden bg-group-bg border-b border-group-border py-24 md:py-32">
+    <section className="relative overflow-hidden bg-group-bg border-b border-group-border py-24 md:py-32 2xl:py-40">
       {/* Blueprint dot-grid */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@ export default function ClientsHeader() {
         </span>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         <motion.div
           variants={staggerContainer}
           initial="hidden"

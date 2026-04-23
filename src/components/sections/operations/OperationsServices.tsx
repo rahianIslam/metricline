@@ -54,7 +54,7 @@ export default function OperationsServices() {
       style={{ backgroundColor: division.surface, borderColor: division.border }}
       aria-label="Our services"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
 
         {/* Header */}
         <motion.div

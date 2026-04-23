@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 export default function CtaBanner() {
   return (
     <section className="bg-anchor-bg border-t-4 border-[#C8832A]">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
           {/* Left — trust signals */}

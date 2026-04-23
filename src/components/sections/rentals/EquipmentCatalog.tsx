@@ -182,7 +182,7 @@ export default function EquipmentCatalog() {
       style={{ backgroundColor: division.bg, borderColor: division.border }}
       aria-label="Equipment catalog"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
 
         {/* Section header */}
         <motion.div

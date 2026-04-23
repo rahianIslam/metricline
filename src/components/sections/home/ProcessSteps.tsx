@@ -40,8 +40,8 @@ export default function ProcessSteps() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="bg-group-surface border-t border-group-border py-24 md:py-32">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-group-surface border-t border-group-border py-24 md:py-32 2xl:py-40">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
         <div className="mb-16">
           <SectionLabel className="mb-4">How We Work</SectionLabel>
           <h2 className="font-display text-display-md font-bold tracking-tight text-group-text">

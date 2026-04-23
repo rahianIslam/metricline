@@ -10,8 +10,8 @@ export default function Differentiators() {
   const { ref, inView } = useInView<HTMLOListElement>();
 
   return (
-    <section className="bg-group-bg py-24 md:py-36 overflow-hidden" aria-label="What sets us apart">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-group-bg py-24 md:py-36 2xl:py-44 overflow-hidden" aria-label="What sets us apart">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto px-6 2xl:px-20">
 
         {/* Header */}
         <div className="mb-16 max-w-xl">

@@ -122,6 +122,22 @@
   --text-label--letter-spacing:    0.15em;
 }
 
+/* ── 2xl type scale (≥1536px) ───────────────────────────── */
+@media (min-width: 1536px) {
+  :root {
+    --text-display-xl: 88px;
+    --text-display-lg: 72px;
+    --text-display-md: 56px;
+    --text-heading-lg: 44px;
+    --text-heading-md: 30px;
+    --text-heading-sm: 22px;
+    --text-body-lg: 18px;
+    --text-body-md: 17px;
+    --text-body-sm: 15px;
+    --text-label: 14px;
+  }
+}
+
 /* ── Shadow system ───────────────────────────────────────── */
 :root {
   --shadow-card: 0 1px 4px rgba(26, 21, 16, 0.06), 0 4px 16px rgba(26, 21, 16, 0.05);
@@ -186,13 +202,13 @@ body {
 /* ── Credential badge ─────────────────────────────────────── */
 .credential-badge {
   font-family: var(--font-jetbrains-mono), monospace;
-  font-size: 9px;
+  font-size: clamp(9px, 0.65vw, 11px);
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #6B6257;
   border: 1px solid #DDD7CE;
-  padding: 5px 10px;
+  padding: clamp(5px, 0.4vw, 7px) clamp(10px, 0.8vw, 14px);
   background: #FFFFFF;
   display: inline-flex;
   align-items: center;

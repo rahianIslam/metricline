@@ -5,14 +5,16 @@ import { motion } from "framer-motion";
 // Nav-sized animated logo mark — three staggered bars + wordmark.
 // Mirrors AnimatedLogo proportions at ~50 % scale for the 64 px nav bar.
 
+// Colours and offsets match ProjectLogo.svg at ~50% scale.
+// All bars same width; offsets: bar1=0, bar2=+25, bar3=+10
 const BARS = [
-  { color: "#FAB500", width: 54, marginLeft: 0  },
-  { color: "#E07228", width: 64, marginLeft: 11 },
-  { color: "#8B3A12", width: 54, marginLeft: 6  },
+  { color: "#FFB800", width: 60, marginLeft: 0  }, // amber-gold — top
+  { color: "#E07A10", width: 60, marginLeft: 25 }, // orange     — furthest right
+  { color: "#C04B08", width: 60, marginLeft: 10 }, // dark rust  — mid offset
 ] as const;
 
-const BAR_HEIGHT = 8;
-const BAR_GAP    = 3;
+const BAR_HEIGHT = 11; // 22px × 50% scale
+const BAR_GAP    = 2;  // 4px × 50% scale
 const RADIUS     = 2;
 
 interface NavLogoProps {
@@ -53,16 +55,13 @@ export default function NavLogo({ theme = "light", delay = 0 }: NavLogoProps) {
         ))}
       </div>
 
-      {/* Wordmark — fades in after bars */}
-      <motion.span
+      {/* Wordmark — two lines, height matches bar stack (37 px) */}
+      <motion.div
         style={{
-          color:         textColor,
-          fontFamily:    "var(--font-syne, sans-serif)",
-          fontWeight:    700,
-          fontSize:      15,
-          letterSpacing: "-0.01em",
-          lineHeight:    1,
-          whiteSpace:    "nowrap",
+          display:       "flex",
+          flexDirection: "column",
+          justifyContent:"space-between",
+          height:        37,
         }}
         initial={{ opacity: 0, x: -6 }}
         animate={{ opacity: 1, x: 0 }}
@@ -72,8 +71,29 @@ export default function NavLogo({ theme = "light", delay = 0 }: NavLogoProps) {
           ease:     [0.22, 1, 0.36, 1],
         }}
       >
-        Metricline Projects
-      </motion.span>
+        <span style={{
+          color:         textColor,
+          fontFamily:    "var(--font-syne, sans-serif)",
+          fontWeight:    700,
+          fontSize:      17,
+          letterSpacing: "-0.01em",
+          lineHeight:    1,
+          whiteSpace:    "nowrap",
+        }}>
+          Metricline
+        </span>
+        <span style={{
+          color:         textColor,
+          fontFamily:    "var(--font-syne, sans-serif)",
+          fontWeight:    700,
+          fontSize:      17,
+          letterSpacing: "-0.01em",
+          lineHeight:    1,
+          whiteSpace:    "nowrap",
+        }}>
+          Projects
+        </span>
+      </motion.div>
     </div>
   );
 }

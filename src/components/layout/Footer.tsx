@@ -1,12 +1,14 @@
+"use client";
+
 // Footer — dark, minimal three-column layout.
 // Col 1: logo + tagline
 // Col 2: site links
 // Col 3: contact info + LinkedIn
 
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { COMPANY, NAV_LINKS, DIVISIONS } from "@/lib/content";
+import NavLogo from "@/components/ui/NavLogo";
 
 function LinkedinIcon({ size = 16 }: { size?: number }) {
   return (
@@ -30,18 +32,17 @@ export default function Footer() {
   return (
     <footer className="bg-anchor-bg border-t border-anchor-border">
       {/* Main grid */}
-      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+      <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto w-full px-6 2xl:px-20 py-14 2xl:py-20 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
         {/* Col 1 — Brand */}
         <div className="flex flex-col gap-5">
           {/* Logo */}
-          <Link href="/" className="group w-fit" aria-label="Metricline Projects home">
-            <Image
-              src="/ProjectLogo.png"
-              alt="Metricline Projects"
-              width={110}
-              height={36}
-              className="object-contain transition-opacity duration-200 group-hover:opacity-80"
-            />
+          <Link
+            href="/"
+            className="group w-fit opacity-90 hover:opacity-100 transition-opacity duration-200"
+            aria-label="Metricline Projects home"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <NavLogo theme="dark" />
           </Link>
 
           {/* Tagline */}
@@ -165,7 +166,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-anchor-border">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="max-w-7xl 2xl:max-w-[1760px] mx-auto w-full px-6 2xl:px-20 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-[12px] text-anchor-textMuted">
             &copy; {year} {COMPANY.legalName}. All rights reserved.
           </p>
